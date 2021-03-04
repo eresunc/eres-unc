@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*-webkit-box-sizing: border-box;*/
+	/*-moz-box-sizing: border-box;*/
+}
+
+header .redes-header {
+	background: #333;
+	padding: 20px;
+}
+
+header .redes-header a {
+	color: #fff;
+	text-align: center;
+	width: 100px;
+	display: block;
+	padding: 20px;
+}
+
+.contenedor {
+	width: 100px;
+	background: blue;
+}
