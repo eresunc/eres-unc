@@ -97,8 +97,12 @@ header {
 
 .logo {
 	width: 100px;
-	height: 60px;
-	background: #000;
+	height: 60px;	
+	padding: 10px;
+}
+
+.logo .imagen-logo {
+	height: 40px;
 }
 
 .menu {
