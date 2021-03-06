@@ -6,9 +6,16 @@
   --oscuro: rgb(27, 27, 27);
   --gris: #555;
 
-  --item-gris-claro: #ccc;
-  --item-gris-oscuro: #aaa;
-  --item-hover-bg: #abc;
+  --azul-oscuro: #229;
+
+  --item-gris-claro: rgb(230, 230, 230);
+  --item-gris-oscuro: rgb(215, 215, 215);
+  --item-hover-bg: rgb(195, 195, 195);
+
+  --height-front: 320px;
+  --lado-front: 200px;
+
+  --font-quicksand: "Quicksand", sans-serif;
 }
 
 * {
@@ -17,14 +24,70 @@
   box-sizing: border-box;
 }
 
+.seccion-nuestras-propuestas {
+  padding: 10px;
+  background: var(--ambar);
+  margin: 7px 0;
+}
+
+.nuestras-propuestas-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: var(--font-quicksand);
+}
+
+.seccion-pilares {
+  width: 100%;
+}
+
+.pilar {
+  position: relative;
+  width: 80%;
+  height: 50px;
+  font-weight: 400;
+  margin-left: 10%;
+  padding: 10px;
+  text-align: center;
+  color: var(--azul-oscuro);
+  background: rgb(250, 250, 250);
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 3px 3px 10px #777;
+}
+
+.ver-propuestas {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 .seccion-propuestas {
   margin: auto;
-  width: 100%;
-  height: 400px;
-  max-width: 1200px;
-  padding: 10px;
+  width: 80%;
+  height: 0;
+  padding: 0;
   position: relative;
-  /* background: #000; */
+  overflow: hidden;
+
+  z-index: -10;
+  transform: translateY(-30px);
+  transition: height 0.5s, padding 1s;
+}
+
+.check-hidden:checked + .seccion-propuestas {
+  z-index: 0;
+  height: calc(var(--height-front) + 100px);
+  padding: 10px;
+  margin-bottom: 10px;
+  transform: translateY(0);
 }
 
 .seccion-front {
@@ -32,23 +95,30 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  width: 300px;
-  height: 300px;
-  font-size: 30px;
-  padding-top: 100px;
-  text-align: center;
+  width: var(--lado-front);
+  height: var(--height-front);
   background: var(--ambar);
-  transform: rotate(270deg);
 }
 
 .txt-rot-vertical {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: var(--font-quicksand);
   color: var(--gris);
+  text-align: center;
+  transform: rotate(270deg);
 }
 
 .seccion-back {
-  width: calc(100% - 200px);
-  float: right;
+  width: calc(100% - 1.5 * var(--lado-front) / 3);
   height: 100%;
+  float: right;
   background: var(--claro);
 }
 
@@ -64,21 +134,21 @@
   justify-content: center;
 }
 
-.item-front {
+.item-propuesta {
   position: relative;
   width: 65%;
-  height: 40px;
+  height: 30px;
   display: flex;
   margin: 10px 0;
   background: var(--item-gris-oscuro);
   cursor: pointer;
 }
 
-.item-front:nth-child(even) {
+.item-propuesta:nth-child(even) {
   background: var(--item-gris-claro);
 }
 
-.item-front:hover {
+.item-propuesta:hover {
   background: var(--item-hover-bg);
 }
 
@@ -91,23 +161,150 @@
   bottom: 0;
   left: -10px;
   margin: auto;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 5px solid var(--ambar);
   background: var(--item-gris-claro);
   cursor: pointer;
 }
 
-.item-front:nth-child(even) .circle {
+.item-propuesta:nth-child(even) .circle {
   background: var(--item-gris-oscuro);
 }
 
-.item-front:hover .circle {
+.item-propuesta:hover .circle {
   background: var(--item-hover-bg);
 }
 
 .propuesta-title {
   margin: auto;
-  font-weight: 900;
+  font-weight: 600;
+  font-family: var(--font-quicksand);
+}
+
+.modal-header {
+  background: #eee;
+  box-shadow: 0 1px 3px #aaa;
+}
+
+.modal-title {
+  font-weight: 400;
+}
+
+.prop-problematica,
+.prop-propuesta,
+.prop-estrategia {
+  font-weight: 500;
+}
+
+.prop-problematica {
+  color: rgb(52, 172, 84);
+}
+
+.prop-propuesta {
+  color: rgb(78, 137, 239);
+}
+
+.prop-estrategia {
+  color: rgb(52, 76, 116);
+}
+
+h6 + p {
+  color: rgb(79, 94, 131);
+}
+
+/*
+xs = Extra small <576px. Max container width None (auto)
+sm = Small ≥576px. Max container width 540px.
+md = Medium ≥768px. Max container width 720px.
+lg = Large ≥992px. Max container width 960px.
+xl = Extra large ≥1200px. Max container width 1140px.
+*/
+@media (max-width: 576px) {
+  .nuestras-propuestas-title {
+    font-size: 20px;
+  }
+
+  .pilar {
+    font-size: 13px;
+  }
+
+  .seccion-front {
+    width: 120px;
+  }
+
+  .txt-rot-vertical {
+    left: -40px;
+    font-size: 22px;
+  }
+
+  .seccion-back {
+    width: calc(100% - 50px);
+  }
+
+  .item-propuesta {
+    width: 75%;
+  }
+
+  .propuesta-title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 460px) {
+  .seccion-front {
+    width: 70px;
+  }
+
+  .seccion-back {
+    width: calc(100% - 25px);
+  }
+
+  .txt-rot-vertical {
+    left: -50px;
+    font-size: 15px;
+  }
+
+  .item-propuesta {
+    height: 20px;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .propuesta-title {
+    font-size: 11px;
+  }
+
+  .modal-title {
+    font-size: 17px;
+  }
+
+  .prop-problematica,
+  .prop-propuesta,
+  .prop-estrategia {
+    font-size: 14px;
+  }
+
+  h6 + p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 330px) {
+  .nuestras-propuestas-title {
+    font-size: 17px;
+  }
+
+  .pilar {
+    font-size: 10px;
+  }
+
+  .ver-propuestas {
+    padding-bottom: 10px;
+    font-size: 9px;
+  }
 }
