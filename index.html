@@ -12,192 +12,234 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- STYLE HEADER/FOOTER -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/header_footer.css" />
+    <!-- END STYLE HEADER/FOOTER -->
+
+    <!-- EQUIPO ERES STYLE -->
+    <link rel="stylesheet" href="./css/equipo-eres.css" />
+    <!-- END EQUIPO ERES STYLE -->
+
+    <!-- PROPUESTAS STYLE -->
+    <link href="https://css.gg/pentagon-right.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/propuestas.css" />
+    <!-- END PROPUESTAS STYLE -->
   </head>
   <body>
     <!-- HEADER -->
-    <header class="container">
-      <!-- HEADER IMG -->
-      <section>
-        <!-- SOCIAL ICONS -->
-        <section>
-          <a href=""><i>f</i></a>
-          <a href=""><i>t</i></a>
-          <a href=""><i>in</i></a>
-        </section>
-        <!-- END SOCIAL ICONS -->
-      </section>
-      <!-- END HEDER IMG -->
-
-      <!-- NAVIGATION BAR -->
-      <section>
-        <!-- LOGO -->
-        <img src="" alt="logo" />
-        <!-- END LOGO -->
-
-        <!-- NAVIGATION -->
-        <nav>
-          <a href="#">Equipo</a>
-          <a href="#">Propuestas</a>
-          <a href="#">Plan</a>
-        </nav>
-        <!-- END NAVIGACION -->
-
-        <!-- SOCIAL ICONS -->
-        <section>
-          <a href=""><i>f</i></a>
-          <a href=""><i>t</i></a>
-          <a href=""><i>in</i></a>
-        </section>
-        <!-- END SOCIAL ICONS -->
-      </section>
-      <!-- END NAVIGATION BAR -->
+    <header>
+      <ul class="redes-header">
+        <li>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
     </header>
-    <!-- END HEADER -->
+
+    <nav class="navegacion">
+      <img src="img/solo-logo-positivo.png" alt="" class="imagen-logo" />
+      
+      <ul class="menu">
+        <li><a href="#">Propuestas</a></li>
+        <li><a href="#">Equipo</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#">Plan</a></li>
+      </ul>
+      
+      <ul class="redes-circulo">
+        <li>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- FIN DEL HEADER -->
 
     <!-- TEAM ERES -->
-    <section class="container bg-dark p-3 mt-5 mb-3 text-white">
-      <h2 class="text-center">
-        <span class="text-white">EQUIPO</span>
-        <span class="text-primary">ERES</span>
+    <section class="seccion-team-eres">
+      <h2 class="team-eres-title">
+        <span class="text-blanco">EQUIPO</span>
+        <span class="text-azul">ERES</span>
       </h2>
-
       <!-- TEAM IMGS -->
-      <section class="row">
-        <!-- IMG -->
-        <article class="col-sm-12 col-md-4 col-3">
-          <!-- IMG FRONT -->
-          <div class="container">
-            <!-- IMG -->
-            <img
-              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2F3-numpy-image-transformations-on-baby-yoda-c27c1409b411&psig=AOvVaw0qGTySZ5S0uDEAmogu-ePj&ust=1614740876905000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDv1NXQkO8CFQAAAAAdAAAAABAD"
-              alt="img miembro"
-            />
-            <!--  END IMG -->
-
-            <!-- NAME -->
-            <div class="row">
-              <h3>Dr. Nombre</h3>
-              <p>Puesto al que postula</p>
-            </div>
-            <!-- END NAME -->
+      <section class="team-imgs-container">
+        <!--CARD 1-->
+        <article class="card team-member-card">
+          <!-- IMG -->
+          <img
+            class="card-img-top"
+            src="./img/DrLuis.jpg"
+            alt="Dr.Luis Ortiz"
+          />
+          <!--END IMG-->
+          <!--CARD BODY-->
+          <div class="card-body">
+            <h3 class="card-title">Dr.Pedro Ortiz Oblitas</h3>
+            <p class="card-text">
+              CANDIDATO AL VICERRECTOR DE iNVESTIGACIÓN Y RSU
+            </p>
           </div>
-          <!-- END IMG FRONT -->
-
-          <!-- IMG BACK -->
-          <div class="container">
-            <h3>NOMBRE</h3>
-            <p>datos importantes</p>
+          <!--END CARD BODY-->
+          <!--CARD FOOTER-->
+          <div class="card-footer">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a href="#" class="ver-perfil">Ver perfil</a>
           </div>
-          <!-- END IMG BACK -->
+          <!-- END CARD FOOTER-->
         </article>
-        <!-- END IMG -->
+        <!-- END CARD 1 -->
 
-        <!-- IMG -->
-        <article class="col-sm-12 col-md-4 col-3">
-          <!-- IMG FRONT -->
-          <div class="container">
-            <!-- IMG -->
-            <img
-              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2F3-numpy-image-transformations-on-baby-yoda-c27c1409b411&psig=AOvVaw0qGTySZ5S0uDEAmogu-ePj&ust=1614740876905000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDv1NXQkO8CFQAAAAAdAAAAABAD"
-              alt="img miembro"
-            />
-            <!--  END IMG -->
-
-            <!-- NAME -->
-            <div class="row">
-              <h3>Dr. Nombre</h3>
-              <p>Puesto al que postula</p>
-            </div>
-            <!-- END NAME -->
+        <!--CARD 2-->
+        <article class="card team-member-card">
+          <!-- IMG -->
+          <img
+            class="card-img-top"
+            src="./img/DrCarlos.jpg"
+            alt="Dr.CarlosAparicio"
+          />
+          <!--END IMG-->
+          <!--CARD BODY-->
+          <div class="card-body">
+            <h3 class="card-title">Dr.Carlos Aparicio Arteaga</h3>
+            <p class="card-text">CANDIDATO AL RECTORADO</p>
           </div>
-          <!-- END IMG FRONT -->
-
-          <!-- IMG BACK -->
-          <div class="container">
-            <h3>NOMBRE</h3>
-            <p>datos importantes</p>
+          <!--END CARD BODY-->
+          <!--CARD FOOTER-->
+          <div class="card-footer">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a href="#" class="ver-perfil">Ver perfil</a>
           </div>
-          <!-- END IMG BACK -->
+          <!-- END CARD FOOTER-->
         </article>
-        <!-- END IMG -->
+        <!-- END CARD 2 -->
 
-        <!-- IMG -->
-        <article class="col-sm-12 col-md-4 col-3">
-          <!-- IMG FRONT -->
-          <div class="container">
-            <!-- IMG -->
-            <img
-              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftowardsdatascience.com%2F3-numpy-image-transformations-on-baby-yoda-c27c1409b411&psig=AOvVaw0qGTySZ5S0uDEAmogu-ePj&ust=1614740876905000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDv1NXQkO8CFQAAAAAdAAAAABAD"
-              alt="img miembro"
-            />
-            <!--  END IMG -->
-
-            <!-- NAME -->
-            <div class="row">
-              <h3>Dr. Nombre</h3>
-              <p>Puesto al que postula</p>
-            </div>
-            <!-- END NAME -->
+        <!--CARD 3-->
+        <article class="card team-member-card">
+          <!-- IMG -->
+          <img
+            class="card-img-top"
+            src="./img/DrCarmen.jpg"
+            alt="Dra.Carmen Castillo"
+          />
+          <!--END IMG-->
+          <!--CARD BODY-->
+          <div class="card-body">
+            <h3 class="card-title">Dra. Carmen Castillo Díaz</h3>
+            <p class="card-text">CANDIDATA AL VICERRECTORADO ACADÉMICO</p>
           </div>
-          <!-- END IMG FRONT -->
-
-          <!-- IMG BACK -->
-          <div class="container">
-            <h3>NOMBRE</h3>
-            <p>datos importantes</p>
+          <!--END CARD BODY-->
+          <!--CARD FOOTER-->
+          <div class="card-footer">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a href="#" class="ver-perfil">Ver perfil</a>
           </div>
-          <!-- END IMG BACK -->
+          <!-- END CARD FOOTER-->
         </article>
-        <!-- END IMG -->
+        <!-- END CARD 3 -->
       </section>
       <!-- END TEAM IMGS -->
     </section>
     <!-- END TEAM ERES -->
 
-    <!-- PROPUESTAS -->
-    <section class="container p-3 mt-3 mb-3">
-      <div class="row">
-        <!-- TITULO PROUESTAS -->
-        <section class="col-2 bg-ambar">
-          <h2 class="text-gris">Propuestas</h2>
-        </section>
-        <!-- FIN TITULO PROUESTAS -->
-
-        <!-- PROPUESTA ITEMS -->
-        <section class="col bg-claro">
-          <!-- ITEM -->
-          <div>
-            <i>icon</i>
-            <div>Título de la propuesta</div>
-          </div>
-          <!-- END ITEM -->
-
-          <!-- ITEM -->
-          <div>
-            <i>icon</i>
-            <div>Título de la propuesta</div>
-          </div>
-          <!-- END ITEM -->
-
-          <!-- ITEM -->
-          <div>
-            <i>icon</i>
-            <div>Título de la propuesta</div>
-          </div>
-          <!-- END ITEM -->
-
-          <!-- ITEM -->
-          <div>
-            <i>icon</i>
-            <div>Título de la propuesta</div>
-          </div>
-          <!-- END ITEM -->
-        </section>
-        <!-- PROPUESTA ITEMS -->
-      </div>
+    <section class="seccion-nuestras-propuestas">
+      <h1 class="nuestras-propuestas-title">Nuestras Propuestas</h1>
     </section>
-    <!-- END PROPUESTAS -->
+
+    <!-- SECCION PILARES -->
+    <section class="seccion-pilares">
+      <!--<label for="chk-${key}" class="pilar">
+        ${pilares[key].name}
+        <br />
+        <span class="ver-propuestas">ver propuestas</span>
+      </label>
+      <input class="check-hidden" id="chk-${key}" type="checkbox" hidden /> -->
+
+      <!-- SECCION PROPUESTAS -->
+      <!-- <section id="${key}" class="seccion-propuestas">
+        <section class="seccion-front">
+          <span class="txt-rot-vertical">Propuestas</span>
+        </section>
+
+        <section class="seccion-back">
+          <div class="items-container">
+            <div
+              class="item-propuesta"
+              data-toggle="modal"
+              data-target="#propuestaModal"
+            >
+              <span class="circle">
+                <i class="gg-pentagon-right"></i>
+              </span>
+
+              <div class="propuesta-title">
+                <span>Propuesta Nro. ${ind + 1}</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section> -->
+      <!-- END SECCION PROPUESTAS -->
+    </section>
+    <!-- END SECCION PILARES -->
+
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="propuestaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="propuestaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="propuestaModalLabel">
+              Modal Propuesta title
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Modal Propuesta description</div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL -->
 
     <!-- ACREDITACIÓN -->
     <section class="container bg-light p-3 mt-3 mb-3">
@@ -207,19 +249,19 @@
       <section class="row">
         <!-- VID -->
         <div class="col-sm -12 col-md-4 col-3">
-          <video src="" controls></video>
+          <!-- <video src="" controls></video> -->
         </div>
         <!-- END VID -->
 
         <!-- VID -->
         <div class="col-sm -12 col-md-4 col-3">
-          <video src="" controls></video>
+          <!-- <video src="" controls></video> -->
         </div>
         <!-- END VID -->
 
         <!-- VID -->
         <div class="col-sm -12 col-md-4 col-3">
-          <video src="" controls></video>
+          <!-- <video src="" controls></video> -->
         </div>
         <!-- END VID -->
       </section>
@@ -228,37 +270,45 @@
     <!-- END ACREDITACIÓN -->
 
     <!-- FOOTER -->
-    <footer class="container bg-dark text-white">
-      <!-- FOOTER LEFT -->
-      <section>
-        <img src="" alt="logo" />
-
-        <!-- SOCIAL ICONS -->
-        <div>
-          <a href=""><i>f</i></a>
-          <a href=""><i>t</i></a>
-          <a href=""><i>in</i></a>
+    <footer>
+      <div>
+        <div class="logo">
+          <img src="img/solo-logo-positivo.png" alt="" class="imagen-logo" />
         </div>
-        <!-- END SOCIAL ICONS -->
-      </section>
-      <!-- END FOOTER LEFT -->
 
-      <!-- FOOTER RIGHT -->
-      <section>
-        Copyright &copy
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-        EreseUnc. All rights reserved
-      </section>
-      <!-- END FOOTER RIGHT -->
+        <ul class="redes-circulo">
+          <li>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy
+          <script>document.write((new Date).getFullYear())</script>
+          EresUnc. All rights reserved.
+        </p>
+      </div>
     </footer>
-    <!-- END SECTION -->
+    <!-- FIN DEL FOOTER -->
   </body>
 
+  <script src="./js/data.js"></script>
+  <script src="./js/index.js""></script>
   <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 </html>
