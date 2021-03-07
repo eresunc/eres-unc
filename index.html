@@ -340,11 +340,13 @@
 
     <script src="http://connect.facebook.net/en_US/all.js"></script>
       <script type="text/javascript">
+      console.log("Start call to FB");
       FB.api('/eres.unc.cajamarca/posts/', function(response) {
           for (var i = 0; i < response.data.length; i++) {
               alert(response.data[i].message);
           }
       });
+      console.log("END call");
     </script>
     
     <div id="fb-root"></div>
