@@ -284,6 +284,10 @@ footer {
     font-size: 11px;
     margin: 2px 0;
   }
+
+  .navegacion img {
+    margin-right: 20px;
+  }
 }
 
 /********* NAVEGACIÓN MEDIA *********/
@@ -366,7 +370,7 @@ footer {
 }
 
 /********* FOOTER MEDIA *********/
-@media (max-width: 530px) {
+@media (max-width: 560px) {
   footer {
     flex-direction: column;
     align-items: center;
