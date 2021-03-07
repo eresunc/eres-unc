@@ -338,15 +338,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./facebook_all.js"></script>
-      <script type="text/javascript">
-      console.log("Start call to FB");
-      FB.api('/eres.unc.cajamarca/posts/', function(response) {
-          for (var i = 0; i < response.data.length; i++) {
-              alert(response.data[i].message);
-          }
-      });
-      console.log("END call");
+    <script src="./js/facebook_all.js"></script>
+    <script src="./js/fetch_posts.js">
     </script>
     
     <div id="fb-root"></div>
