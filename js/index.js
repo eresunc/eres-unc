@@ -66,8 +66,13 @@ function addPropuestasListener(key) {
           <h6 class="prop-propuesta">PROPUESTA</h6>
           <p>${propuesta.propuesta}</p>
   
-          <h6 class="prop-estrategia">ESTRATEGIA</h6>
-          <p>${propuesta.estrategias}</p>
+          <h6 class="prop-estrategia">ESTRATEGIAS</h6>
+          <ul class="lista-estrategias">
+            ${propuesta.estrategias
+              .map((item) => `<li>${item}</li>`)
+              .join()
+              .replace(/,/g, "")}
+          </ul>
         `
     })
   })
