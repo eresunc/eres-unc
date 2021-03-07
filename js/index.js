@@ -60,8 +60,12 @@ function addPropuestasListener(key) {
       let propuesta = pilares[key].propuestas[ind]
       DOM.modalTitle.innerHTML = `Propuesta Nro. ${ind + 1}`
       DOM.modalDesc.innerHTML = `
-          <h6 class="prop-problematica">PROBLEMÁTICA</h6>
-          <p>${propuesta.problematica}</p>
+          ${
+            propuesta.problematica
+              ? `<h6 class="prop-problematica">PROBLEMÁTICA</h6>
+          <p>${propuesta.problematica}</p>`
+              : ""
+          }
   
           <h6 class="prop-propuesta">PROPUESTA</h6>
           <p>${propuesta.propuesta}</p>
