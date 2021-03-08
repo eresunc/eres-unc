@@ -1,6 +1,6 @@
 let DOM = {
-  modalTitle: document.querySelector(".modal-title"),
-  modalDesc: document.querySelector(".modal-body"),
+  modalTitle: document.querySelector("#propuestaModal .modal-title"),
+  modalDesc: document.querySelector("#propuestaModal .modal-body"),
   seccionPilares: document.querySelector(".seccion-pilares"),
 }
 

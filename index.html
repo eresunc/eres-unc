@@ -38,8 +38,14 @@
     />
     <link rel="stylesheet" href="./css/propuestas.css" />
     <!-- END PROPUESTAS STYLE -->
+    <!-- POSTS STYLE -->
+    <link rel="stylesheet" href="./css/posts.css">
+    <!-- END POSTS STYLE -->
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="dZbeEAQs"></script>
+
     <!-- HEADER -->
     <header>
       <ul class="redes-header">
@@ -74,7 +80,7 @@
       <ul class="menu">
         <li><a href="#idequipo">Equipo</a></li>
         <li><a href="#idpropuestas">Propuestas</a></li>
-        <li><a href="#">Posts</a></li>
+        <li><a href="#idposts">Posts</a></li>
       </ul>
       
       <ul id="redesCirculo" class="redes-circulo">
@@ -122,9 +128,9 @@
           <!--CARD FOOTER-->
           <div class="card-footer">
             <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Médico Veterinario, Docente Principal de Inmunología Veterinaria, Docente de Escuela de Posgrado UNC y UNT. Investigador del SINACYT, Peer Reviewer de diferentes revistas internacionales.  Investigador con más de 30 artículos científicos. Premio ELSEVIER y CONCYTEC.
             </p>
-            <a href="#" class="ver-perfil">Ver perfil</a>
+            <button id="btnPerfilPedro" type="button" data-toggle="modal" data-target="#curriculumModal" class="ver-perfil">Ver perfil</button>
           </div>
           <!-- END CARD FOOTER-->
         </article>
@@ -148,9 +154,9 @@
           <!--CARD FOOTER-->
           <div class="card-footer">
             <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Experto en Sistemas y TI, así como en el sector de Educación Superior Universitaria de Pre y Posgrado, como Docente Principal. Ejerció cargos en dos oportunidades como Director de la facultad de Ingeniería UNC. Evaluador ICACIT, especialista en gestión de procesos de Acreditación Universitaria SINEACE y especialista en Autoevaluación Universitaria ANR.
             </p>
-            <a href="#" class="ver-perfil">Ver perfil</a>
+            <button id="btnPerfilCarlos" type="button" data-toggle="modal" data-target="#curriculumModal" class="ver-perfil">Ver perfil</button>
           </div>
           <!-- END CARD FOOTER-->
         </article>
@@ -174,15 +180,37 @@
           <!--CARD FOOTER-->
           <div class="card-footer">
             <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Socióloga, experta en el sector de gestión de proyectos sociales y consultoría en investigación y planificación del desarrollo de instituciones públicas y privadas. Docente Principal de la Facultad de Ciencias Sociales y Escuela de Posgrado UNC. Ejerció cargos como Directora y Decana de la facultada de Ciencias Sociales UNC y Coordinadora del Centro de Investigaciones. Ha publicado libros y revistas de sus investigaciones.
             </p>
-            <a href="#" class="ver-perfil">Ver perfil</a>
+            <button id="btnPerfilCarmen" type="button" data-toggle="modal" data-target="#curriculumModal" class="ver-perfil">Ver perfil</button>
           </div>
           <!-- END CARD FOOTER-->
         </article>
         <!-- END CARD 3 -->
       </section>
       <!-- END TEAM IMGS -->
+
+      <!-- MODAL CURRICULUM -->
+      <div class="modal fade" id="curriculumModal" tabindex="-1" role="dialog" aria-labelledby="curriculumModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="curriculumModalLabel">curriculum</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END MODAL CURRICULUM -->
     </section>
     <!-- END TEAM ERES -->
 
@@ -258,36 +286,64 @@
     <!-- END MODAL -->
 
     <!-- POSTS -->
-    <section class="container bg-light p-3 mt-3 mb-3">
-      <h3>POSTS</h3>
+    <section id="idposts" class="seccion-posts">
+      <h3 class="posts-title">NUESTROS POSTS</h3>
 
-      <!-- VIDEOS -->
-      <section class="row">
+      <!-- POSTS CONTAINER -->
+      <section class="posts-container">
         <!-- POST 1 -->
-        <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/118009126944573/?type=3&amp;eid=ARB5Ucn4_BqS5rr2GgJcrKyR_M1HIHBEbmTPwyHQ-NA5fjeAw1sPeWkeLGN40mkGFRLmC1tMSlKavTOY&amp;__xts__[0]=68.ARAq5hDNreTU-LcG8qvHH4fkHtdmbWw0Iccpi-ULtpzBDspMsoDzE-7F8gePQ7h1thlMDLnwK5_Yb8N4UP4cdioMltLoL_-BFMM4URPia6hjXEbLsb1i9gUandu2FWTFlel1hNvHmCJcggRaweSygqQTpIjvXhmoT2TNnufZv_YFv-USOkFLCGycG448HShkxTFlm0APBaDZFQUdCDTynZIYPl8d5803fM4bI79E9P44XpBF_vITpp_OonknlSpenMVOfgywYPpKYtg2eMeXd_9OtYQKX6szXsFNf23gbf0IP-3wxho" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/118009126944573/?type=3" class="fb-xfbml-parse-ignore"><p>Compartimos los horarios del Semestre Académico 2020-II de la Universidad Nacional de Cajamarca.
-
-          👉👉👉 http://academicoplus.unc.edu.pe/WebExterna/Horarios</p>Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/118009126944573/?type=3">Sunday, 7 March 2021</a></blockquote>
+        <div class="post-item">
+          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/118009126944573/?type=3&amp;eid=ARB5Ucn4_BqS5rr2GgJcrKyR_M1HIHBEbmTPwyHQ-NA5fjeAw1sPeWkeLGN40mkGFRLmC1tMSlKavTOY&amp;__xts__[0]=68.ARAq5hDNreTU-LcG8qvHH4fkHtdmbWw0Iccpi-ULtpzBDspMsoDzE-7F8gePQ7h1thlMDLnwK5_Yb8N4UP4cdioMltLoL_-BFMM4URPia6hjXEbLsb1i9gUandu2FWTFlel1hNvHmCJcggRaweSygqQTpIjvXhmoT2TNnufZv_YFv-USOkFLCGycG448HShkxTFlm0APBaDZFQUdCDTynZIYPl8d5803fM4bI79E9P44XpBF_vITpp_OonknlSpenMVOfgywYPpKYtg2eMeXd_9OtYQKX6szXsFNf23gbf0IP-3wxho" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/118009126944573/?type=3" class="fb-xfbml-parse-ignore"><p>Compartimos los horarios del Semestre Académico 2020-II de la Universidad Nacional de Cajamarca.
+  
+            👉👉👉 http://academicoplus.unc.edu.pe/WebExterna/Horarios</p>Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/118009126944573/?type=3">Sunday, 7 March 2021</a></blockquote>
+          </div>
         </div>
         <!-- END POST 1 -->
 
         <!-- POST 2 -->
-        <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/116221697123316" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/116221697123316/?type=3" class="fb-xfbml-parse-ignore"><p>Compartimos las principales propuestas del Plan de Trabajo del Movimiento Académico ERES UNC, alineado a la mejora...</p>Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/116221697123316/?type=3">Saturday, 27 February 2021</a></blockquote>
+        <div class="post-item">
+          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/116221697123316" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/116221697123316/?type=3" class="fb-xfbml-parse-ignore"><p>Compartimos las principales propuestas del Plan de Trabajo del Movimiento Académico ERES UNC, alineado a la mejora...</p>Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/116221697123316/?type=3">Saturday, 27 February 2021</a></blockquote>
+          </div>
         </div>
         <!-- END POST 2 -->
 
         <!-- POST 3 -->
-        <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618763850276" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618763850276/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618763850276/?type=3">Wednesday, 24 February 2021</a></blockquote></div>
+        <div class="post-item">
+          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618763850276" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618763850276/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618763850276/?type=3">Wednesday, 24 February 2021</a></blockquote></div>
+        </div>
         <!-- END POST 3 -->
 
         <!-- POST 4 -->
-        <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618740516945" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618740516945/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618740516945/?type=3">Wednesday, 24 February 2021</a></blockquote></div>
+        <div class="post-item">
+          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618740516945" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618740516945/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618740516945/?type=3">Wednesday, 24 February 2021</a></blockquote></div>
+        </div>
         <!-- END POST 4 -->
 
         <!-- POST 5 -->
-        <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618717183614" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618717183614/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618717183614/?type=3">Wednesday, 24 February 2021</a></blockquote></div>
+        <div class="post-item">
+          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618717183614" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618717183614/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618717183614/?type=3">Wednesday, 24 February 2021</a></blockquote></div>
+        </div>
         <!-- END POST 5 -->
+
+        <!-- POST -->
+        <div class="post-item">
+          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234207422065/?type=3&amp;theater" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234207422065/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234207422065/?type=3">Sunday, 14 February 2021</a></blockquote></div>
+        </div>
+        <!-- END POST -->
+
+        <!-- POST -->
+        <div class="post-item">
+          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234057422080/?type=3&amp;theater" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234057422080/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234057422080/?type=3">Sunday, 14 February 2021</a></blockquote></div>
+        </div>
+        <!-- END POST -->
+
+        <!-- POST -->
+        <div class="post-item">
+          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/112983400780479/?type=3&amp;theater" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/112983400780479/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/112983400780479/?type=3">Saturday, 13 February 2021</a></blockquote></div>
+        </div>
+        <!-- END POST -->
       </section>
-      <!-- END VIDEOS -->
+      <!-- END POSTS CONTAINER -->
     </section>
     <!-- END POSTS -->
 
@@ -326,6 +382,7 @@
 
   <script src="./js/dom.js"></script>
   <script src="./js/data.js"></script>
+  <script src="./js/mostrar_curriculum.js"></script>
   <script src="./js/index.js""></script>
   <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -337,11 +394,4 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
-    <script src="./js/facebook_all.js"></script>
-    <script src="./js/fetch_posts.js">
-    </script>
-    
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="dZbeEAQs"></script>
 </html>

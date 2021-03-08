@@ -211,7 +211,8 @@
   text-align: justify;
 }
 
-h6 + p {
+h6 + p,
+h6 + ul li {
   text-align: justify;
   color: rgb(79, 94, 131);
 }

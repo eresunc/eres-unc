@@ -1,3 +1,111 @@
+let curriculums = {
+  btnPerfilPedro: {
+    nombre: "Dr. PEDRO ORTIZ OBLITAS",
+    html: `
+    <h6>Estudios</h6>
+    <p>
+    Médico Veterinario, egresado de la Facultad de Ciencias Veterinarias de la Universidad Nacional de Cajamarca, PhD en la Universidad de Liverpool, Inglaterra.
+    </p>
+    <h6>Experiencia</h6>
+    <p>
+    Profesor Principal de Inmunología Veterinaria, docente Investigador del Sistema Nacional de Ciencia y Tecnología del Perú, código RENACYT P0000489, grupo “Carlos Monge II” y líder del “Grupo de Investigación en Tremátodos”.
+    Docente de las Escuelas de Posgrado de la UNC y de la UNT y revisor de proyectos de investigación del CONCYTEC y de la UNMSM.
+    <br>
+    Peer Reviewer (revisor de pares) de revistas científicas internacionales entre ellas: Acta Tropica, Veterinary Parasitology, Parasites and Vectors, Experimental Parasitology, Transactions of the Royal Society of Tropical Medicine and Hygiene y Tropical Biomedicine.
+    </p>
+    <h6>Investigación</h6>
+    <p>
+    Es autor de 32 artículos científicos publicados en revistas indizadas nacionales e internacionales. Además, de más de 50 resúmenes de trabajos científicos presentados en congresos de su especialidad.
+    </p>
+    <h6>Reconocimientos</h6>
+    <p>
+    En el año 2019 recibió el premio ELSEVIER Región Nor Oriente del Perú, en la categoría de Ciencias Médicas, otorgado por ELSEVIER en coordinación con CONCYTEC.
+    </p>
+    `,
+    redes: `
+    <ul class="redes-modal">
+      <li>
+        <a href="https://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=489" target="blank" class="cvitae"><i></i></a>
+      </li>
+      <li>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=7102416527" target="blank" class="scopus"><i></i></a>
+      </li>
+      <li>
+        <a href="https://orcid.org/0000-0001-8846-777X" target="blank" class="orcid"><i></i></a>
+      </li>
+      <li>
+        <a href="https://www.researchgate.net/profile/Pedro-Ortiz-12" target="blank" class="resgate"><i></i></a>
+      </li>
+      <li>
+        <a href="https://scholar.google.es/citations?user=imSNZLoAAAAJ&hl=es" target="blank" class="scgoogle"><i></i></a>
+      </li>
+    </ul>
+    `,
+  },
+  btnPerfilCarlos: {
+    nombre: "Dr. CARLOS APARICIO ARTEAGA",
+    html: `
+    <h6>Estudios</h6>
+    <p>
+    Ing. de Computación y Sistemas egresado de la Universidad Privada Antenor Orrego, con segunda especialidad en Ingeniería de Sistemas de la Universidad Nacional San Agustín, Mgtr. en Ciencias de la Educación Superior de la Universidad San Pedro y Universidad de la Habana Cuba, Dr. en Ingeniería de Sistemas de la Universidad Nacional de Piura, Mgtr. en Ing. de Sistemas UPAO, Diplomado en Gerencia Empresarial con TI en ESAN, Diplomado de especialización en Administración y Gestión Pública.
+    </p>
+    <h6>Experiencia</h6>
+    <p>
+    Profesor Principal de la Facultad de Ingeniería y la Escuela de Posgrado UNC, se ha desempeñado como Director de Escuela de Ingeniería de Sistemas en dos oportunidades. Presidente del comité de Calidad del Programa de Ingeniería de Sistemas - SINEACE, Presidente de la comisión curricular de Ing. de Sistemas. Director General de Sistemas Informáticos.
+    <br>
+    Evaluador ICACIT agencia acreditadora reconocida por SINEACE, especialista en gestión de procesos de autoevaluación contextualizado al nuevo modelo de Acreditación Universitaria SINEACE por el Centro de Innovación para la Acreditación CINNA y Empresa Evaluadora con fines de Acreditación EEFIA, especialista en Autoevaluación Universitaria ANR.
+    </p>
+    <h6>Certificaciones Internacionales</h6>
+    <p>
+    Project Management Professional del PMI, Certified Scrum Master, Certified Scrum Developer y Certified Scrum Product Owner por Scrum Alliance, ITIL Foundation y PRINCE2 Foundation por Axelos, Google Certified Educator Level 1 y Google Certified Educator Level 2 por Google Inc.
+    </p>
+    `,
+    redes: `
+    <ul class="redes-modal">
+      <li>
+        <a href="https://www.facebook.com/carlosenriqueaa/" target="blank" class="facebook"><i class="fa fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/caparicioa/" target="blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </li>
+      <li>
+        <a href="http://directorio.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do;jsessionid=f4da7ca0d6b7dbbc0994424e6584?id_investigador=22124" target="blank" class="cvitae"><i></i></a>
+      </li>
+    </ul>
+    `,
+  },
+  btnPerfilCarmen: {
+    nombre: "Dra. CARMEN CASTILLO DÍAZ",
+    html: `
+    <h6>Estudios</h6>
+    <p>
+    Socióloga, egresada de la Universidad Nacional de Cajamarca, Mgtr. en Sociología de la Pontificia Universidad Católica del Perú y Dra. en Ciencias Mención Educación en la Universidad Nacional de Cajamarca.
+    </p>
+    <h6>Experiencia</h6>
+    <p>
+    Se ha desempeñado en actividades de promoción y capacitación social, asistencia técnica en desarrollo rural, gestión de proyectos sociales, consultorías especializadas en investigación y planificación del desarrollo en instituciones públicas y privadas; así mismo, es Docente Principal de la Facultad de Ciencias Sociales y en la Escuela de Posgrado UNC. Así mismo, en este ámbito se ha desempeñado como asesora y jurado de tesis de pregrado y posgrado UNC. Ejerció cargos en la Universidad Nacional de Cajamarca como Directora del Centro de Investigaciones Sociológicas, Directora de la Escuela Académico Profesional de Sociología, Decana de la Facultad de Ciencias Sociales, Asesora de la Escuela de Posgrado y Coordinadora del Centro de Investigaciones de la Escuela de Posgrado.
+    </p>
+    <h6>Investigaciones</h6>
+    <p>
+    Ha publicado diversas investigaciones en libros y revistas, auspiciadas por CONCYTEC, FOMCIENCIAS, Pontificia Universidad Católica del Perú, PRONAMACHCS, la MCLCP-Región Cajamarca y la Universidad Nacional de Cajamarca.
+    </p>
+    `,
+    redes: `
+    <ul class="redes-modal">
+      <li>
+        <a href="https://www.facebook.com/carmengloria.castillodiaz" target="blank" class="facebook"><i class="fa fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/1Ia1WB-6pgLU995l2gD_VjLc-PxCEs-cp/view" target="blank" class="cv"><i></i></a>
+      </li>
+      <!--<li>
+        <a href="ccastillo@unc.edu.pe" target="blank" class="instagram"><i></i></a>
+      </li>-->
+    </ul>
+    `,
+  },
+}
+
 let pilares = {
   pilar1: {
     name: "Pilar I: FORMACIÓN INTEGRAL",

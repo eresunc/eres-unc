@@ -43,6 +43,7 @@
   padding-bottom: 0;
   width: 25%;
   background: var(--bg-card);
+  cursor: pointer;
 }
 
 .card-img-top {
@@ -56,18 +57,19 @@
   margin: 0;
 }
 
-.card-title,
-.card-text {
-  text-align: center;
-}
-
 .card-title {
+  text-align: center;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .card-text {
+  text-align: justify;
   font-size: 11px;
+}
+
+.card-title + .card-text {
+  text-align: center;
 }
 
 .team-member-card .card-footer {
@@ -76,6 +78,7 @@
   top: 100%;
   width: 100%;
   height: 100%;
+  z-index: 10;
   color: #fff;
   background: rgb(0, 0, 0, 0.9);
   transition: top ease-in-out 0.5s;
@@ -85,11 +88,19 @@
 }
 
 .ver-perfil {
+  font-size: 12px;
   text-decoration: none;
   padding: 7px;
   color: #eee;
   border: 1px solid #eee;
+  background: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.ver-perfil:hover {
+  color: #33f;
+  text-decoration: underline;
 }
 
 /* MEDIA */
