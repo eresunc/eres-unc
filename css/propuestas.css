@@ -292,7 +292,8 @@ h6 + ul li {
     font-size: 14px;
   }
 
-  h6 + p {
+  h6 + p,
+  h6 + ul li {
     font-size: 12px;
   }
 }
