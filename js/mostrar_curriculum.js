@@ -8,7 +8,6 @@ let cardMembers = document.querySelectorAll(".team-member-card")
 for (let btnPerfil of verPerfilBtns) {
   btnPerfil.addEventListener("click", (e) => {
     let _btnPerfil = e.target
-    console.log(_btnPerfil.id)
     let curr = curriculums[_btnPerfil.id]
 
     modalTitle.innerHTML = curr.nombre
