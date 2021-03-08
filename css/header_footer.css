@@ -365,6 +365,17 @@ footer {
   #check-menu:checked ~ .navegacion {
     background: #fff;
     box-shadow: 0 2px 7px #000;
+    z-index: 50;
+  }
+
+  #check-menu:checked ~ .navegacion .line {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    box-shadow: 0 2.25px 3px 0 #000;
   }
 
   #check-menu:checked ~ .navegacion .menu-ham {
@@ -376,8 +387,9 @@ footer {
   }
 
   #check-menu:checked ~ .navegacion .menu {
-    height: 120px;
+    height: 130px;
     padding-bottom: 3px;
+    z-index: 0;
   }
 
   #check-menu:checked ~ .seccion-team-eres {
@@ -393,7 +405,7 @@ footer {
     flex-wrap: nowrap;
     flex-direction: column;
     position: absolute;
-    top: calc(100% + 10px);
+    top: 100%;
     background: rgb(250, 250, 250);
     height: 0;
     overflow-y: hidden;
