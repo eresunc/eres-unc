@@ -402,6 +402,21 @@ footer {
     transition: background ease-in-out 0.5s;
   }
 
+  .div-img-logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .div-img-logo .imagen-logo {
+    margin: 0;
+    margin-right: 30px;
+  }
+
+  .flex-center {
+    justify-content: center;
+  }
+
   .menu {
     width: 100%;
     flex-wrap: nowrap;
