@@ -43,9 +43,6 @@
     <!-- END POSTS STYLE -->
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="dZbeEAQs"></script>
-
     <!-- HEADER -->
     <header>
       <ul class="redes-header">
@@ -78,7 +75,7 @@
       <div class="div-img-logo">
         <img src="img/preferente-positivo.png" alt="" class="imagen-logo" />
       </div>
-      
+
       <ul class="menu">
         <li><a href="#idequipo">Equipo</a></li>
         <li><a href="#idpropuestas">Propuestas</a></li>
@@ -86,7 +83,7 @@
       </ul>
 
       <div class="line"></div>
-      
+
       <ul id="redesCirculo" class="redes-circulo">
         <li>
           <a href="https://www.facebook.com/eres.unc.cajamarca" target="blank" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -104,252 +101,207 @@
     </nav>
     <!-- FIN DEL HEADER -->
 
-    <!-- TEAM ERES -->
-    <section id="idequipo" class="seccion-team-eres">
-      <h2 class="team-eres-title">
-        <span class="text-blanco">EQUIPO</span>
-        <span class="text-azul">ERES</span>
-      </h2>
-      <!-- TEAM IMGS -->
-      <section class="team-imgs-container">
-        <!--CARD 1-->
-        <article class="card team-member-card">
-          <!-- IMG -->
-          <img
-            class="card-img-top"
-            src="./img/DrLuis.jpg"
-            alt="Dr.Luis Ortiz"
-          />
-          <!--END IMG-->
-          <!--CARD BODY-->
-          <div class="card-body">
-            <h3 class="card-title">Dr. Pedro Ortiz Oblitas</h3>
-            <p class="card-text">
-              CANDIDATO A VICERRECTOR DE INVESTIGACIÓN Y RSU
-            </p>
-          </div>
-          <!--END CARD BODY-->
-          <!--CARD FOOTER-->
-          <div class="card-footer">
-            <p class="card-text">
-              PhD en Inmunología de la Universidad de Liverpool, Inglaterra. Docente Principal de Inmunología Veterinaria, Docente de Escuela de Posgrado UNC y UNT. Investigador del SINACYT, Peer Reviewer de diferentes revistas internacionales.  Investigador con más de 30 artículos científicos. Premio ELSEVIER y CONCYTEC.
-            </p>
-            <button id="btnPerfilPedro" type="button" data-toggle="modal" data-target="#curriculumModal" class="ver-perfil">Ver perfil</button>
-          </div>
-          <!-- END CARD FOOTER-->
-        </article>
-        <!-- END CARD 1 -->
+    <!-- CONTENEDOR -->
+    <section id="main-container">
 
-        <!--CARD 2-->
-        <article class="card team-member-card">
-          <!-- IMG -->
-          <img
-            class="card-img-top"
-            src="./img/DrCarlos.jpg"
-            alt="Dr.CarlosAparicio"
-          />
-          <!--END IMG-->
-          <!--CARD BODY-->
-          <div class="card-body">
-            <h3 class="card-title">Dr. Carlos Aparicio Arteaga</h3>
-            <p class="card-text">CANDIDATO AL RECTORADO</p>
-          </div>
-          <!--END CARD BODY-->
-          <!--CARD FOOTER-->
-          <div class="card-footer">
-            <p class="card-text">
-              Doctor en Ingeniería de Sistemas, profesor principal de la Facultad de Ingeniería y la Escuela de Posgrado de la UNC, especialista en procesos de Acreditación Universitaria, actualmente es presidente del comité de calidad del Programa de Estudios de Ingeniería de Sistemas y evaluador de la agencia acreditadora ICACIT reconocida por SINEACE. Cuenta con certificaciones internacionales como PMP, CSD, CSPO, CSM, PRINCE2, Google Certified Educator L1 y L2.
-            </p>
-            <button id="btnPerfilCarlos" type="button" data-toggle="modal" data-target="#curriculumModal" class="ver-perfil">Ver perfil</button>
-          </div>
-          <!-- END CARD FOOTER-->
-        </article>
-        <!-- END CARD 2 -->
+      <!-- POSTS -->
+      <article id="fb-posts">
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Feres.unc.cajamarca%2F&tabs=timeline&width=250&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1220978138367772" width="250" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </article>
+      <!-- END POSTS -->
 
-        <!--CARD 3-->
-        <article class="card team-member-card">
-          <!-- IMG -->
-          <img
-            class="card-img-top"
-            src="./img/DrCarmen.jpg"
-            alt="Dra.Carmen Castillo"
-          />
-          <!--END IMG-->
-          <!--CARD BODY-->
-          <div class="card-body">
-            <h3 class="card-title">Dra. Carmen Castillo Díaz</h3>
-            <p class="card-text">CANDIDATA AL VICERRECTORADO ACADÉMICO</p>
-          </div>
-          <!--END CARD BODY-->
-          <!--CARD FOOTER-->
-          <div class="card-footer">
-            <p class="card-text">
-              Socióloga, Magíster en Sociología de la PUCP y Doctora en Ciencias de la UNC, experta en el sector de gestión de proyectos sociales y consultoría en investigación y planificación del desarrollo de instituciones públicas y privadas. Docente Principal de la Facultad de Ciencias Sociales y Escuela de Posgrado UNC. Ejerció cargos como Directora y Decana de la facultada de Ciencias Sociales UNC y Coordinadora del Centro de Investigaciones. Ha publicado libros y revistas de sus investigaciones.
-            </p>
-            <button id="btnPerfilCarmen" type="button" data-toggle="modal" data-target="#curriculumModal" class="ver-perfil">Ver perfil</button>
-          </div>
-          <!-- END CARD FOOTER-->
-        </article>
-        <!-- END CARD 3 -->
-      </section>
-      <!-- END TEAM IMGS -->
+      <!-- CONTENT -->
+      <article id="main-content">
+        <!-- TEAM ERES -->
+        <section id="idequipo" class="seccion-team-eres">
+          <h2 class="team-eres-title">
+            <span class="text-blanco">EQUIPO</span>
+            <span class="text-azul">ERES</span>
+          </h2>
+          <!-- TEAM IMGS -->
+          <section class="team-imgs-container">
+            <!--CARD 1-->
+            <article class="card team-member-card">
+              <!-- IMG -->
+              <img
+                class="card-img-top"
+                src="./img/DrLuis.jpg"
+                alt="Dr.Luis Ortiz"
+              />
+              <!--END IMG-->
+              <!--CARD BODY-->
+              <div class="card-body">
+                <h3 class="card-title">Dr. Pedro Ortiz Oblitas</h3>
+                <p class="card-text">
+                  CANDIDATO A VICERRECTOR DE INVESTIGACIÓN Y RSU
+                </p>
+              </div>
+              <!--END CARD BODY-->
+              <!--CARD FOOTER-->
+              <div class="card-footer">
+                <p class="card-text">
+                  PhD en Inmunología de la Universidad de Liverpool, Inglaterra. Docente Principal de Inmunología Veterinaria, Docente de Escuela de Posgrado UNC y UNT. Investigador del SINACYT, Peer Reviewer de diferentes revistas internacionales.  Investigador con más de 30 artículos científicos. Premio ELSEVIER y CONCYTEC.
+                </p>
+                <button id="btnPerfilPedro" type="button" data-toggle="modal" data-target="#curriculumModal" class="ver-perfil">Ver perfil</button>
+              </div>
+              <!-- END CARD FOOTER-->
+            </article>
+            <!-- END CARD 1 -->
 
-      <!-- MODAL CURRICULUM -->
-      <div class="modal fade" id="curriculumModal" tabindex="-1" role="dialog" aria-labelledby="curriculumModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="curriculumModalLabel">curriculum</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END MODAL CURRICULUM -->
-    </section>
-    <!-- END TEAM ERES -->
+            <!--CARD 2-->
+            <article class="card team-member-card">
+              <!-- IMG -->
+              <img
+                class="card-img-top"
+                src="./img/DrCarlos.jpg"
+                alt="Dr.CarlosAparicio"
+              />
+              <!--END IMG-->
+              <!--CARD BODY-->
+              <div class="card-body">
+                <h3 class="card-title">Dr. Carlos Aparicio Arteaga</h3>
+                <p class="card-text">CANDIDATO AL RECTORADO</p>
+              </div>
+              <!--END CARD BODY-->
+              <!--CARD FOOTER-->
+              <div class="card-footer">
+                <p class="card-text">
+                  Doctor en Ingeniería de Sistemas, profesor principal de la Facultad de Ingeniería y la Escuela de Posgrado de la UNC, especialista en procesos de Acreditación Universitaria, actualmente es presidente del comité de calidad del Programa de Estudios de Ingeniería de Sistemas y evaluador de la agencia acreditadora ICACIT reconocida por SINEACE. Cuenta con certificaciones internacionales como PMP, CSD, CSPO, CSM, PRINCE2, Google Certified Educator L1 y L2.
+                </p>
+                <button id="btnPerfilCarlos" type="button" data-toggle="modal" data-target="#curriculumModal" class="ver-perfil">Ver perfil</button>
+              </div>
+              <!-- END CARD FOOTER-->
+            </article>
+            <!-- END CARD 2 -->
 
-    <section id="idpropuestas" class="seccion-nuestras-propuestas">
-      <h1 class="nuestras-propuestas-title">Nuestras Propuestas</h1>
-    </section>
+            <!--CARD 3-->
+            <article class="card team-member-card">
+              <!-- IMG -->
+              <img
+                class="card-img-top"
+                src="./img/DrCarmen.jpg"
+                alt="Dra.Carmen Castillo"
+              />
+              <!--END IMG-->
+              <!--CARD BODY-->
+              <div class="card-body">
+                <h3 class="card-title">Dra. Carmen Castillo Díaz</h3>
+                <p class="card-text">CANDIDATA AL VICERRECTORADO ACADÉMICO</p>
+              </div>
+              <!--END CARD BODY-->
+              <!--CARD FOOTER-->
+              <div class="card-footer">
+                <p class="card-text">
+                  Socióloga, Magíster en Sociología de la PUCP y Doctora en Ciencias de la UNC, experta en el sector de gestión de proyectos sociales y consultoría en investigación y planificación del desarrollo de instituciones públicas y privadas. Docente Principal de la Facultad de Ciencias Sociales y Escuela de Posgrado UNC. Ejerció cargos como Directora y Decana de la facultada de Ciencias Sociales UNC y Coordinadora del Centro de Investigaciones. Ha publicado libros y revistas de sus investigaciones.
+                </p>
+                <button id="btnPerfilCarmen" type="button" data-toggle="modal" data-target="#curriculumModal" class="ver-perfil">Ver perfil</button>
+              </div>
+              <!-- END CARD FOOTER-->
+            </article>
+            <!-- END CARD 3 -->
+          </section>
+          <!-- END TEAM IMGS -->
 
-    <!-- SECCION PILARES -->
-    <section class="seccion-pilares">
-      <!--<label for="chk-${key}" class="pilar">
-        ${pilares[key].name}
-        <br />
-        <span class="ver-propuestas">ver propuestas</span>
-      </label>
-      <input class="check-hidden" id="chk-${key}" type="checkbox" hidden /> -->
-
-      <!-- SECCION PROPUESTAS -->
-      <!-- <section id="${key}" class="seccion-propuestas">
-        <section class="seccion-front">
-          <span class="txt-rot-vertical">Propuestas</span>
-        </section>
-
-        <section class="seccion-back">
-          <div class="items-container">
-            <div
-              class="item-propuesta"
-              data-toggle="modal"
-              data-target="#propuestaModal"
-            >
-              <span class="circle">
-                <i class="gg-pentagon-right"></i>
-              </span>
-
-              <div class="propuesta-title">
-                <span>Propuesta Nro. ${ind + 1}</span>
+          <!-- MODAL CURRICULUM -->
+          <div class="modal fade" id="curriculumModal" tabindex="-1" role="dialog" aria-labelledby="curriculumModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="curriculumModalLabel">curriculum</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
               </div>
             </div>
           </div>
+          <!-- END MODAL CURRICULUM -->
         </section>
-      </section> -->
-      <!-- END SECCION PROPUESTAS -->
+        <!-- END TEAM ERES -->
+
+        <section id="idpropuestas" class="seccion-nuestras-propuestas">
+          <h1 class="nuestras-propuestas-title">Nuestras Propuestas</h1>
+        </section>
+
+        <!-- SECCION PILARES -->
+        <section class="seccion-pilares">
+          <!--<label for="chk-${key}" class="pilar">
+            ${pilares[key].name}
+            <br />
+            <span class="ver-propuestas">ver propuestas</span>
+          </label>
+          <input class="check-hidden" id="chk-${key}" type="checkbox" hidden /> -->
+
+          <!-- SECCION PROPUESTAS -->
+          <!-- <section id="${key}" class="seccion-propuestas">
+            <section class="seccion-front">
+              <span class="txt-rot-vertical">Propuestas</span>
+            </section>
+
+            <section class="seccion-back">
+              <div class="items-container">
+                <div
+                  class="item-propuesta"
+                  data-toggle="modal"
+                  data-target="#propuestaModal"
+                >
+                  <span class="circle">
+                    <i class="gg-pentagon-right"></i>
+                  </span>
+
+                  <div class="propuesta-title">
+                    <span>Propuesta Nro. ${ind + 1}</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section> -->
+          <!-- END SECCION PROPUESTAS -->
+        </section>
+        <!-- END SECCION PILARES -->
+
+        <!-- MODAL -->
+        <div
+          class="modal fade"
+          id="propuestaModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="propuestaModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="propuestaModalLabel">
+                  Modal Propuesta title
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">Modal Propuesta description</div>
+            </div>
+          </div>
+        </div>
+        <!-- END MODAL -->
+
+      </article>
+      <!-- END CONTENT -->
+
     </section>
-    <!-- END SECCION PILARES -->
-
-    <!-- MODAL -->
-    <div
-      class="modal fade"
-      id="propuestaModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="propuestaModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="propuestaModalLabel">
-              Modal Propuesta title
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">Modal Propuesta description</div>
-        </div>
-      </div>
-    </div>
-    <!-- END MODAL -->
-
-    <!-- POSTS -->
-    <section id="idposts" class="seccion-posts">
-      <h3 class="posts-title">NUESTROS POSTS</h3>
-
-      <!-- POSTS CONTAINER -->
-      <section class="posts-container">
-        <!-- POST 1 -->
-        <div class="post-item">
-          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/118009126944573/?type=3&amp;eid=ARB5Ucn4_BqS5rr2GgJcrKyR_M1HIHBEbmTPwyHQ-NA5fjeAw1sPeWkeLGN40mkGFRLmC1tMSlKavTOY&amp;__xts__[0]=68.ARAq5hDNreTU-LcG8qvHH4fkHtdmbWw0Iccpi-ULtpzBDspMsoDzE-7F8gePQ7h1thlMDLnwK5_Yb8N4UP4cdioMltLoL_-BFMM4URPia6hjXEbLsb1i9gUandu2FWTFlel1hNvHmCJcggRaweSygqQTpIjvXhmoT2TNnufZv_YFv-USOkFLCGycG448HShkxTFlm0APBaDZFQUdCDTynZIYPl8d5803fM4bI79E9P44XpBF_vITpp_OonknlSpenMVOfgywYPpKYtg2eMeXd_9OtYQKX6szXsFNf23gbf0IP-3wxho" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/118009126944573/?type=3" class="fb-xfbml-parse-ignore"><p>Compartimos los horarios del Semestre Académico 2020-II de la Universidad Nacional de Cajamarca.
-  
-            👉👉👉 http://academicoplus.unc.edu.pe/WebExterna/Horarios</p>Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/118009126944573/?type=3">Sunday, 7 March 2021</a></blockquote>
-          </div>
-        </div>
-        <!-- END POST 1 -->
-
-        <!-- POST 2 -->
-        <div class="post-item">
-          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/116221697123316" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/116221697123316/?type=3" class="fb-xfbml-parse-ignore"><p>Compartimos las principales propuestas del Plan de Trabajo del Movimiento Académico ERES UNC, alineado a la mejora...</p>Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/116221697123316/?type=3">Saturday, 27 February 2021</a></blockquote>
-          </div>
-        </div>
-        <!-- END POST 2 -->
-
-        <!-- POST 3 -->
-        <div class="post-item">
-          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618763850276" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618763850276/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618763850276/?type=3">Wednesday, 24 February 2021</a></blockquote></div>
-        </div>
-        <!-- END POST 3 -->
-
-        <!-- POST 4 -->
-        <div class="post-item">
-          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618740516945" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618740516945/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618740516945/?type=3">Wednesday, 24 February 2021</a></blockquote></div>
-        </div>
-        <!-- END POST 4 -->
-
-        <!-- POST 5 -->
-        <div class="post-item">
-          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618717183614" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618717183614/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/115618717183614/?type=3">Wednesday, 24 February 2021</a></blockquote></div>
-        </div>
-        <!-- END POST 5 -->
-
-        <!-- POST -->
-        <div class="post-item">
-          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234207422065/?type=3&amp;theater" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234207422065/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234207422065/?type=3">Sunday, 14 February 2021</a></blockquote></div>
-        </div>
-        <!-- END POST -->
-
-        <!-- POST -->
-        <div class="post-item">
-          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234057422080/?type=3&amp;theater" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234057422080/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/113234057422080/?type=3">Sunday, 14 February 2021</a></blockquote></div>
-        </div>
-        <!-- END POST -->
-
-        <!-- POST -->
-        <div class="post-item">
-          <div class="fb-post" data-href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/112983400780479/?type=3&amp;theater" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/112983400780479/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/eres.unc.cajamarca/">ERES UNC</a> on&nbsp;<a href="https://www.facebook.com/eres.unc.cajamarca/photos/a.107267288018757/112983400780479/?type=3">Saturday, 13 February 2021</a></blockquote></div>
-        </div>
-        <!-- END POST -->
-      </section>
-      <!-- END POSTS CONTAINER -->
-    </section>
-    <!-- END POSTS -->
+    <!-- END CONTENEDOR -->
 
     <!-- FOOTER -->
     <footer>
