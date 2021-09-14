@@ -15,13 +15,18 @@
   padding: 10px;
 }
 
-.text-blanco {
+.text {
   font-weight: 600;
+  color: var(--gris);
+}
+
+.text-verde {
+  font-weight: 700;
   color: var(--verde);
 }
 
 .text-azul {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--azul);
 }
 
