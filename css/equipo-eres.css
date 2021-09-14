@@ -72,7 +72,7 @@
 }
 
 .card-text {
-  text-align: justify;
+  text-align: center;
   font-size: 11px;
 }
 
@@ -81,6 +81,9 @@
 }
 
 .team-member-card .card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: absolute;
   left: 0;
   top: 100%;
@@ -88,14 +91,20 @@
   height: 100%;
   z-index: 10;
   color: #fff;
-  background: rgb(0, 0, 0, 0.9);
+  background: var(--gris-oscuro);
   transition: top ease-in-out 0.5s;
 }
 .team-member-card:hover .card-footer {
   top: 0;
 }
 
+.card-footer .card-text {
+  font-size: 13px;
+}
+
 .ver-perfil {
+  height: 35px;
+  flex-grow: initial;
   font-size: 12px;
   text-decoration: none;
   padding: 7px;
