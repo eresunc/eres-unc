@@ -5,6 +5,7 @@
   --claro: rgb(238, 238, 238);
   --oscuro: rgb(27, 27, 27);
   --gris: #555;
+  --gris-muy-claro: rgb(243 243 243);
 }
 
 * {

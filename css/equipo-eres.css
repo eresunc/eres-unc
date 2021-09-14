@@ -5,7 +5,8 @@
 .seccion-team-eres {
   width: 95%;
   margin: auto;
-  background: var(--oscuro);
+  background: var(--gris-muy-claro);
+  box-shadow: 0 0 5px 0 rgb(172, 172, 172);
 }
 
 .team-eres-title {
@@ -15,10 +16,12 @@
 }
 
 .text-blanco {
-  color: #fff;
+  font-weight: 600;
+  color: var(--verde);
 }
 
 .text-azul {
+  font-weight: 600;
   color: var(--azul);
 }
 
