@@ -10,6 +10,10 @@ for (let key in pilares) {
   setSeccionPropuestasHeight(key, pilares[key].propuestas.length - 2)
 }
 
+window.addEventListener('click', () => {
+  console.log("Clicked !!!");
+})
+
 function insertarEstructurasPilares(key) {
   let html = `
           <label for="chk-${key}" class="pilar">
@@ -20,12 +24,14 @@ function insertarEstructurasPilares(key) {
           <input class="check-hidden" id="chk-${key}" type="checkbox" hidden />
       `
 
+  const pilarName = pilares[key].name.split(":")[1]
+
   html += `
       <section id="${key}" class="seccion-propuestas">
           <section class="seccion-front">
-              <span class="txt-rot-vertical">Propuestas</span>
+              <span class="txt-rot-vertical">${pilarName}</span>
           </section>
-  
+
           <section class="seccion-back">
               <div class="items-container">
       `
@@ -36,7 +42,7 @@ function insertarEstructurasPilares(key) {
                       <span class="circle">
                           <i class="gg-pentagon-right"></i>
                       </span>
-  
+
                       <div class="propuesta-title">
                           <span>Propuesta Nro. ${ind + 1}</span>
                       </div>
@@ -66,10 +72,10 @@ function addPropuestasListener(key) {
           <p>${propuesta.problematica}</p>`
               : ""
           }
-  
+
           <h6 class="prop-propuesta">PROPUESTA</h6>
           <p>${propuesta.propuesta}</p>
-  
+
           <h6 class="prop-estrategia">ESTRATEGIAS</h6>
           <ul class="lista-estrategias">
             ${propuesta.estrategias
