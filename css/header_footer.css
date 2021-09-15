@@ -253,13 +253,13 @@ header {
 
 /*FOOTER*/
 footer {
-  background: #333;
+  background: #191d4b;
   width: 100%;
   min-height: 150px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-content: flex-end;
 }
 
 .footer-left {
