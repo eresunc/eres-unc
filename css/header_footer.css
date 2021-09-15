@@ -111,20 +111,14 @@ header {
 }
 
 .menu {
-  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
-.menu li {
-  display: inline-block;
-  text-align: center;
-}
-
-.menu li a {
+.menu a {
   color: #fff;
   text-decoration: none;
   display: block;
@@ -133,9 +127,16 @@ header {
   padding: 5px 10px;
 }
 
-.menu li a:hover {
+.menu a:hover {
   background: #2b3386;
 }
+
+/* .menu .activa {
+  background: #2c3270;
+  border:rgba(255, 255, 255, .2) inset 2px;
+} */
+
+
 
 /*Redes sociales de menú de navegación*/
 .redes-circulo,
@@ -262,7 +263,7 @@ footer {
   align-content: flex-end;
 }
 
-.footer-left {
+/* .footer-left {
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -292,7 +293,7 @@ footer {
 
 .footer-left .redes-circulo {
   margin: 0;
-}
+} */
 
 .copyright {
   text-align: center;
