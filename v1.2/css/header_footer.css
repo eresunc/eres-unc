@@ -247,7 +247,7 @@ header {
 .redes-modal .linkedin {
   background: var(--linkedin);
 }
-/* 
+/*
 .redes-modal .twitter {
   background: var(--twitter);
 } */
@@ -256,44 +256,12 @@ header {
 footer {
   background: #191d4b;
   width: 100%;
-  min-height: 150px;
+  min-height: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-end;
 }
-
-/* .footer-left {
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 20px;
-}
-
-.footer-left .logo {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  border-radius: 50%;
-  border: 3px solid var(--azul);
-  background: rgb(25, 25, 25);
-}
-
-.footer-left .logo img {
-  width: 30px;
-  height: 20px;
-  margin: 0;
-}
-
-.footer-left .redes-circulo {
-  margin: 0;
-} */
 
 .copyright {
   text-align: center;
