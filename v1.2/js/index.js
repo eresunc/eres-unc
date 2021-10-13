@@ -10,10 +10,6 @@ for (let key in pilares) {
   setSeccionPropuestasHeight(key, pilares[key].propuestas.length - 2)
 }
 
-window.addEventListener('click', () => {
-  console.log("Clicked !!!");
-})
-
 function insertarEstructurasPilares(key) {
   let html = `
           <label for="chk-${key}" class="pilar">
@@ -106,6 +102,16 @@ function setSeccionPropuestasHeight(key, extraItems) {
   front.style.height = height + "px"
 
   checkBx.addEventListener("change", () => {
+    document.querySelectorAll('.pilar + .check-hidden')
+      .forEach(chk => {
+        if (chk !== checkBx)
+        {
+          let propuestaId = chk.id.split('-')[1]
+          chk.checked = false
+          document.getElementById(propuestaId).style.height = "0"
+        }
+      });
+
     if (checkBx.checked) seccionPropuestas.style.height = height + 100 + "px"
     else seccionPropuestas.style.height = "0"
   })
