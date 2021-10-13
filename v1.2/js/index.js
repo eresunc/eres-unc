@@ -116,3 +116,16 @@ function setSeccionPropuestasHeight(key, extraItems) {
     else seccionPropuestas.style.height = "0"
   })
 }
+
+
+function addIframe() {
+  const postsContainer = document.getElementById('fb-posts')
+  postsContainer.innerHTML = ''
+  const height = document.getElementById('main-content').offsetHeight
+  const iframe = `<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Feres.unc.cajamarca%2F&tabs=timeline&width=250&height=${height}&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1220978138367772" width="250" height="${height}" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>`
+
+  postsContainer.innerHTML = iframe
+}
+
+addIframe()
+window.addEventListener('resize', addIframe)
