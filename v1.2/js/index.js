@@ -15,7 +15,7 @@ function insertarEstructurasPilares(key) {
           <label for="chk-${key}" class="pilar">
             ${pilares[key].name}
             <br>
-            <span class="ver-propuestas">ver propuestas</span>
+            <span class="ver-propuestas"><img class="d-arrow" src="./img/arrow-circle.jpg" alt="ver propuestas"></span>
           </label>
           <input class="check-hidden" id="chk-${key}" type="checkbox" hidden />
       `
