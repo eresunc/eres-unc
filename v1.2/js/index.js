@@ -90,7 +90,6 @@ function setSeccionPropuestasHeight(key, extraItems) {
   const checkBx = document.querySelector(`#chk-${key}`)
   const front = document.querySelector(`#${key} .seccion-front`)
   const seccionPropuestas = document.querySelector(`#${key}`)
-  const images = document.querySelectorAll(`.d-arrow`)
   let height = 170
   let factor = 50
 
@@ -113,7 +112,7 @@ function setSeccionPropuestasHeight(key, extraItems) {
         }
       });
 
-    images.forEach(img => img.src = './img/arrow-down.jpg')
+    document.querySelectorAll(`.d-arrow`).forEach(img => (img.src = './img/arrow-down.jpg'))
 
     let img = checkBx.previousElementSibling.querySelector('.d-arrow')
     if (checkBx.checked) {
