@@ -131,12 +131,9 @@ header {
   background: #2b3386;
 }
 
-/* .menu .activa {
-  background: #2c3270;
-  border:rgba(255, 255, 255, .2) inset 2px;
-} */
-
-
+.menu .active {
+  background: #494f94;
+}
 
 /*Redes sociales de menú de navegación*/
 .redes-circulo,
