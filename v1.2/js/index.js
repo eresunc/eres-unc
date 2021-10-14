@@ -15,7 +15,7 @@ function insertarEstructurasPilares(key) {
           <label for="chk-${key}" class="pilar">
             ${pilares[key].name}
             <br>
-            <span class="ver-propuestas"><img class="d-arrow" src="./img/arrow-circle.jpg" alt="ver propuestas"></span>
+            <span class="ver-propuestas"><img class="d-arrow" src="./img/arrow-down.jpg" alt="ver propuestas"></span>
           </label>
           <input class="check-hidden" id="chk-${key}" type="checkbox" hidden />
       `
@@ -87,9 +87,10 @@ function addPropuestasListener(key) {
 function setSeccionPropuestasHeight(key, extraItems) {
   // Section fron min height: 170px, can hold 2
   // after 2, height should increase by 50px for each extra item
-  let checkBx = document.querySelector(`#chk-${key}`)
-  let front = document.querySelector(`#${key} .seccion-front`)
-  let seccionPropuestas = document.querySelector(`#${key}`)
+  const checkBx = document.querySelector(`#chk-${key}`)
+  const front = document.querySelector(`#${key} .seccion-front`)
+  const seccionPropuestas = document.querySelector(`#${key}`)
+  const images = document.querySelectorAll(`.d-arrow`)
   let height = 170
   let factor = 50
 
@@ -112,11 +113,18 @@ function setSeccionPropuestasHeight(key, extraItems) {
         }
       });
 
-    if (checkBx.checked) seccionPropuestas.style.height = height + 100 + "px"
-    else seccionPropuestas.style.height = "0"
+    images.forEach(img => img.src = './img/arrow-down.jpg')
+
+    let img = checkBx.previousElementSibling.querySelector('.d-arrow')
+    if (checkBx.checked) {
+      seccionPropuestas.style.height = height + 100 + "px"
+      img.src = './img/arrow-up.png'
+    } else {
+      seccionPropuestas.style.height = "0"
+      img.src = './img/arrow-down.jpg'
+    }
   })
 }
-
 
 function addIframe() {
   const postsContainer = document.getElementById('fb-posts')
