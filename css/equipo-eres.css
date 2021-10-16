@@ -93,6 +93,7 @@
   color: #fff;
   background: var(--gris-oscuro);
   transition: top ease-in-out 0.5s;
+  overflow-y: scroll;
 }
 .team-member-card:hover .card-footer {
   top: 0;
